@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en-AU"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Email signature for Tim</title>
+<style>
+ body{margin:0;background:#ECEEF2;font-family:Arial,Helvetica,sans-serif;color:#1f2937}
+ .box{max-width:720px;margin:24px auto;padding:0 16px}
+ .card{background:#fff;border-radius:10px;padding:28px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+ h1{font-size:22px;margin:0 0 6px} ol{padding-left:20px;line-height:1.7;margin:10px 0 0}
+ button{background:#FFDD00;color:#0B2554;border:0;border-radius:6px;padding:12px 20px;font-size:15px;font-weight:bold;cursor:pointer}
+ #ok{margin-left:10px;color:#15803d;font-weight:bold}
+ .sig{border:1px dashed #cbd5e1;border-radius:8px;padding:20px;margin:18px 0;overflow-x:auto}
+</style></head><body><div class="box"><div class="card">
+<h1>Email signature for Tim</h1>
+<p style="margin:0 0 16px;color:#4b5563">Includes the new 2026 catalogue banner, which opens the flip book when clients click it.</p>
+<button id="copy">Copy signature</button><span id="ok"></span>
+<div class="sig" id="sig">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#1f2937;">
+<p style="margin:0 0 12px;"><i>Kind Regards</i></p>
+<p style="margin:0;font-size:15px;"><b>Tim</b></p>
+<p style="margin:0 0 6px;color:#4b5563;">Graphic Designer</p>
+<p style="margin:0;font-size:13px;color:#4b5563;">W: <a href="https://gippslandprinters.com.au" style="color:#1B4F9C;text-decoration:none;">www.gippslandprinters.com.au</a> | T: <a href="tel:+61351742348" style="color:#1B4F9C;text-decoration:none;">03 5174 2348</a> | E: <a href="mailto:art@gippslandprinters.com.au" style="color:#1B4F9C;text-decoration:none;">art@gippslandprinters.com.au</a></p>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:12px 0 0;">
+<tr><td><a href="https://gippslandprinters.github.io/catalogue/" target="_blank" title="View our 2026 catalogue"><img src="https://gippslandprinters.github.io/catalogue/img/signature-banner.jpg" width="480" height="120" alt="New 2026 Catalogue: click to flip through it online" style="display:block;width:480px;height:120px;border:0;"></a></td></tr>
+</table>
+<p style="margin:14px 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:17px;color:#1f2937;"><b>OUR COMMITMENT TO YOU</b></p>
+<p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:16px;color:#4b5563;">We at Gippsland Printers make every effort to ensure your work is correct, with quality control being a priority.<br>
+General production process time is 7 - 10 working days, however, during busy periods this can extend to 15 working days.<br>
+Please contact us if you require the finished product by a specific date and we will endeavour to meet it.<br>
+We have a commitment to source local or Australian made products at all times as we believe manufacturing should remain local.</p>
+</div>
+</div>
+<b>To add it in Outlook</b>
+<ol>
+ <li>Click <b>Copy signature</b> above.</li>
+ <li><b>Outlook on the web or new Outlook:</b> Settings &rarr; Accounts &rarr; Signatures. <b>Outlook for Mac:</b> Outlook &rarr; Settings &rarr; Signatures. <b>Outlook for Windows:</b> File &rarr; Options &rarr; Mail &rarr; Signatures.</li>
+ <li>Delete your old signature text, paste (Cmd+V or Ctrl+V), and save.</li>
+ <li>Set it as the default for new messages and replies.</li>
+</ol>
+<p style="color:#6b7280;font-size:13px;margin:14px 0 0">If Copy doesn't work, select everything inside the dashed box with your mouse, copy, then paste.</p>
+</div></div>
+<script>
+document.getElementById('copy').onclick=async function(){
+  var el=document.getElementById('sig'), ok=document.getElementById('ok');
+  try{
+    await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([el.innerHTML],{type:'text/html'}),'text/plain':new Blob([el.innerText],{type:'text/plain'})})]);
+    ok.textContent='Copied. Now paste it into Outlook.';
+  }catch(e){
+    var r=document.createRange(); r.selectNodeContents(el); var s=getSelection(); s.removeAllRanges(); s.addRange(r);
+    document.execCommand('copy'); ok.textContent='Copied. Now paste it into Outlook.';
+  }
+};
+</script></body></html>
