@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026 Catalogue | Gippsland Printers</title>
+<meta name="description" content="Flip through the Gippsland Printers 2026 catalogue: print, stationery, banners and displays, promotional products, labels and graphic design.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gippsland Printers 2026 Catalogue">
+<meta property="og:description" content="Print, signage, labels and promotional products. Flip through the full range online.">
+<meta property="og:image" content="https://gippslandprinters.github.io/catalogue/img/og.jpg">
+<meta property="og:url" content="https://gippslandprinters.github.io/catalogue/">
+<meta name="theme-color" content="#0B2554">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2554; --navy-2:#102f69; --blue:#1B4F9C; --yellow:#FFDD00; --cyan:#00AEEF;
+    --ink:#ffffff; --ink-2:#c9d6ee; --bar-h:60px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{background:var(--navy);color:var(--ink);font-family:Roboto,Arial,sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  button{font:inherit;color:inherit}
+
+  .app{display:grid;grid-template-rows:var(--bar-h) 1fr var(--bar-h);height:100dvh;height:100vh}
+  @supports (height:100dvh){.app{height:100dvh}}
+
+  /* Header */
+  header{display:flex;align-items:center;gap:16px;padding:0 16px;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08);z-index:5}
+  header .logo{display:flex;align-items:center;gap:14px;text-decoration:none;min-width:0}
+  header .logo img{height:34px;width:auto;display:block}
+  header .title{font-family:"Roboto Condensed",Arial Narrow,Arial,sans-serif;font-weight:900;font-size:20px;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;padding-left:14px;border-left:1px solid rgba(255,255,255,.2)}
+  header .title i{font-style:normal;color:var(--yellow)}
+  header nav{margin-left:auto;display:flex;gap:8px}
+  .hbtn{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px;border-radius:6px;text-decoration:none;font-weight:500;font-size:14px;border:1px solid rgba(255,255,255,.22);background:transparent;cursor:pointer;white-space:nowrap}
+  .hbtn:hover{background:rgba(255,255,255,.08)}
+  .hbtn.primary{background:var(--yellow);border-color:var(--yellow);color:var(--navy)}
+  .hbtn.primary:hover{background:#ffe740}
+  .hbtn svg{width:18px;height:18px;flex:none}
+
+  /* Stage */
+  header,main,footer{min-width:0}
+  main{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;
+       background:radial-gradient(120% 90% at 50% 40%, #1d4f9b 0%, #12397a 45%, var(--navy) 100%)}
+  #bookWrap{position:relative;margin:0 auto;transition:transform .5s ease}
+  #bookWrap.front{transform:translateX(-25%)}
+  #bookWrap.back{transform:translateX(25%)}
+  #book{margin:0 auto}
+  .page{background:#fff;overflow:hidden}
+  .page img{width:100%;height:100%;object-fit:cover;display:block;user-select:none;-webkit-user-drag:none;background:#f1f1f1}
+  .stf__parent{filter:drop-shadow(0 18px 40px rgba(0,0,0,.45))}
+
+  .side{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:0;
+        background:rgba(255,255,255,.12);display:grid;place-items:center;cursor:pointer;z-index:4;transition:background .15s, opacity .15s}
+  .side:hover{background:rgba(255,255,255,.24)}
+  .side:disabled{opacity:0;pointer-events:none}
+  .side svg{width:26px;height:26px}
+  #prevSide{left:16px} #nextSide{right:16px}
+
+  .hint{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-size:13px;color:var(--ink-2);background:rgba(0,0,0,.25);
+        padding:6px 12px;border-radius:20px;pointer-events:none;transition:opacity .6s;white-space:nowrap}
+
+  /* Footer toolbar */
+  footer{display:flex;align-items:center;justify-content:center;gap:6px;padding:0 12px;background:var(--navy);border-top:1px solid rgba(255,255,255,.08);z-index:5}
+  .tbtn{height:40px;min-width:40px;padding:0 10px;border:0;border-radius:6px;background:transparent;display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-size:14px}
+  .tbtn:hover{background:rgba(255,255,255,.1)}
+  .tbtn svg{width:20px;height:20px}
+  .tbtn[aria-pressed="true"]{background:rgba(255,255,255,.14)}
+  #indicator{min-width:150px;text-align:center;font-variant-numeric:tabular-nums;font-size:14px;color:var(--ink-2)}
+  .sep{width:1px;height:24px;background:rgba(255,255,255,.15);margin:0 6px}
+
+  /* Contents menu */
+  #menu{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);background:#fff;color:#14213d;border-radius:10px;
+        box-shadow:0 14px 40px rgba(0,0,0,.35);padding:8px;width:min(340px,calc(100vw - 32px));z-index:20;display:none}
+  #menu.open{display:block}
+  #menu h3{margin:6px 10px 8px;font-family:"Roboto Condensed",Arial Narrow,Arial,sans-serif;font-weight:900;font-size:18px;text-transform:uppercase;letter-spacing:.4px}
+  #menu h3 i{font-style:normal;color:#e6c400}
+  #menu button{display:flex;justify-content:space-between;width:100%;border:0;background:none;padding:9px 10px;border-radius:6px;cursor:pointer;font-size:15px;color:#14213d;text-align:left}
+  #menu button:hover{background:#eef3fb}
+  #menu button span:last-child{color:#7a879c;font-variant-numeric:tabular-nums}
+
+  /* Thumbnails drawer */
+  #thumbs{position:absolute;left:0;right:0;bottom:0;height:min(46vh,340px);background:rgba(8,26,60,.97);z-index:15;
+          transform:translateY(105%);transition:transform .25s ease;overflow-y:auto;padding:16px;border-top:1px solid rgba(255,255,255,.1)}
+  #thumbs.open{transform:none}
+  #thumbs .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+  #thumbs button{border:0;padding:0;background:none;cursor:pointer;text-align:center;color:var(--ink-2);font-size:12px}
+  #thumbs img{width:100%;aspect-ratio:1.414;object-fit:cover;display:block;border-radius:3px;outline:2px solid transparent;outline-offset:2px;background:#203f73}
+  #thumbs button:hover img{outline-color:rgba(255,255,255,.5)}
+  #thumbs button.current img{outline-color:var(--yellow)}
+
+  /* Zoom overlay */
+  #zoom{position:fixed;inset:0;background:rgba(5,16,40,.96);z-index:50;display:none;overflow:auto;-webkit-overflow-scrolling:touch}
+  #zoom.open{display:block}
+  #zoom .imgs{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding:64px 12px 24px}
+  #zoom img{width:min(1600px,100%);height:auto;display:block;background:#fff}
+  #zoom.pair img{width:min(1600px,calc(50% - 6px))}
+  #zoomClose{position:fixed;top:12px;right:12px;z-index:51}
+
+  @media (max-width:860px){
+    header .title{display:none}
+    .hbtn .lbl{display:none}
+    .hbtn{padding:0 10px}
+    .side{width:42px;height:42px} #prevSide{left:6px} #nextSide{right:6px}
+    .hide-sm{display:none!important}
+    #indicator{min-width:96px}
+    #zoom.pair img{width:min(1600px,100%)}
+  }
+  @media (max-width:420px){ header .logo img{height:28px} .tbtn{min-width:36px;padding:0 6px} }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <a class="logo" href="https://gippslandprinters.com.au" aria-label="Gippsland Printers website">
+      <img src="img/logo-white.png" alt="Gippsland Printers" width="116" height="34">
+      <span class="title">2026 Catalogue<i>.</i></span>
+    </a>
+    <nav>
+      <a class="hbtn" href="tel:+61351742348" aria-label="Call 03 5174 2348">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span class="lbl">03 5174 2348</span></a>
+      <a class="hbtn" href="Gippsland-Printers-Catalogue-2026.pdf" download aria-label="Download PDF">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        <span class="lbl">Download PDF</span></a>
+      <a class="hbtn primary" href="mailto:print@gippslandprinters.com.au?subject=Catalogue%20enquiry" aria-label="Email us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        <span class="lbl">Get a quote</span></a>
+    </nav>
+  </header>
+
+  <main id="stage">
+    <button class="side" id="prevSide" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <div id="bookWrap"><div id="book"></div></div>
+    <button class="side" id="nextSide" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+    <div class="hint" id="hint">Click or drag the page corners to turn</div>
+
+    <div id="thumbs" aria-hidden="true"><div class="grid" id="thumbGrid"></div></div>
+    <div id="menu" role="menu" aria-label="Contents">
+      <h3>Contents<i>.</i></h3>
+      <div id="menuList"></div>
+    </div>
+  </main>
+
+  <footer>
+    <button class="tbtn" id="menuBtn" aria-pressed="false" aria-label="Contents">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg><span class="hide-sm">Contents</span></button>
+    <button class="tbtn" id="thumbBtn" aria-pressed="false" aria-label="All pages">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span class="hide-sm">Pages</span></button>
+    <span class="sep hide-sm"></span>
+    <button class="tbtn" id="prevBtn" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <span id="indicator" aria-live="polite">Page 1 of 64</span>
+    <button class="tbtn" id="nextBtn" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+    <span class="sep hide-sm"></span>
+    <button class="tbtn" id="zoomBtn" aria-label="Zoom in">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg><span class="hide-sm">Zoom</span></button>
+    <button class="tbtn hide-sm" id="fsBtn" aria-label="Full screen">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M16 21h3a2 2 0 0 0 2-2v-3"/></svg></button>
+  </footer>
+</div>
+
+<div id="zoom" role="dialog" aria-label="Zoomed page">
+  <button class="hbtn primary" id="zoomClose">Close ✕</button>
+  <div class="imgs" id="zoomImgs"></div>
+</div>
+
+<noscript><div style="padding:24px;background:#fff;color:#000">This flip book needs JavaScript. <a href="Gippsland-Printers-Catalogue-2026.pdf">Download the PDF catalogue</a> instead.</div></noscript>
+
+<script src="js/page-flip.browser.js"></script>
+<script>
+(function(){
+  var TOTAL = 64;
+  var PAGE_RATIO = 841.89 / 595.28;      // width / height of one page
+  var MIN_W = 400;                       // below 2x this, show one page at a time
+  var SECTIONS = [
+    ['Cover',1],['Contents',3],['Our Story',5],['Graphic Design',7],['Print Stationery',9],
+    ['Mail-Out Services',22],['Student Diaries & Yearbooks',24],['Banners & Displays',33],
+    ['Promotional Products',47],['Labels & Decals',59],['Our Timeline',62],['Contact Us',64]
+  ];
+  var pad = function(n){ return (n < 10 ? '0' : '') + n; };
+
+  var book = document.getElementById('book');
+  var wrap = document.getElementById('bookWrap');
+  var stage = document.getElementById('stage');
+
+  // Build pages
+  for (var i = 1; i <= TOTAL; i++) {
+    var d = document.createElement('div');
+    d.className = 'page';
+    if (i === 1 || i === TOTAL) d.setAttribute('data-density', 'hard');
+    var img = document.createElement('img');
+    img.setAttribute('data-src', 'pages/p' + pad(i) + '.jpg');
+    img.alt = 'Catalogue page ' + i;
+    img.draggable = false;
+    d.appendChild(img);
+    book.appendChild(d);
+  }
+  var imgs = book.querySelectorAll('img');
+  function prime(idx){
+    for (var j = idx - 2; j <= idx + 5; j++) {
+      if (j >= 0 && j < TOTAL && !imgs[j].src) imgs[j].src = imgs[j].getAttribute('data-src');
+    }
+  }
+
+  // Fit the book to the stage (runs before the library's own resize handler)
+  function fit(){
+    var W = stage.clientWidth - (window.innerWidth > 860 ? 150 : 24);
+    var H = stage.clientHeight - 40;
+    var w = Math.min(W, H * PAGE_RATIO * 2);
+    if (w < MIN_W * 2) w = Math.min(W, H * PAGE_RATIO);
+    wrap.style.width = Math.max(260, Math.floor(w)) + 'px';
+  }
+  window.addEventListener('resize', fit);
+  fit();
+
+  function hashPage(){
+    var m = /page=(\d+)/.exec(location.hash);
+    var n = m ? parseInt(m[1], 10) : 1;
+    return Math.min(Math.max(n, 1), TOTAL) - 1;
+  }
+
+  var start = hashPage();
+  prime(start);
+
+  var pf = new St.PageFlip(book, {
+    width: 800, height: Math.round(800 / PAGE_RATIO),
+    size: 'stretch', minWidth: MIN_W, maxWidth: 1600, minHeight: 150, maxHeight: 2000,
+    showCover: true, usePortrait: true, mobileScrollSupport: false,
+    maxShadowOpacity: 0.35, flippingTime: 750, startPage: start, showPageCorners: true
+  });
+  pf.loadFromHTML(book.querySelectorAll('.page'));
+  // The library pins a min-width on the book; let phones go narrower than that
+  book.style.minWidth = '0'; book.style.minHeight = '0';
+
+  var indicator = document.getElementById('indicator');
+  function visible(idx){
+    if (pf.getOrientation() === 'portrait' || idx === 0) return [idx];
+    var left = idx % 2 === 1 ? idx : idx - 1;
+    return [left, left + 1].filter(function(x){ return x > 0 && x < TOTAL; });
+  }
+  function update(idx){
+    prime(idx);
+    var v = visible(idx);
+    var land = pf.getOrientation() !== 'portrait';
+    wrap.classList.toggle('front', land && v[0] === 0);
+    wrap.classList.toggle('back', land && v.length === 1 && v[0] === TOTAL - 1);
+    indicator.textContent = (v.length > 1 ? 'Pages ' + (v[0]+1) + '–' + (v[1]+1) : 'Page ' + (v[0]+1)) + ' of ' + TOTAL;
+    document.getElementById('prevSide').disabled = idx <= 0;
+    document.getElementById('nextSide').disabled = v[v.length-1] >= TOTAL - 1;
+    if (history.replaceState) history.replaceState(null, '', '#page=' + (v[0]+1));
+    var tb = document.querySelectorAll('#thumbGrid button');
+    for (var k = 0; k < tb.length; k++) tb[k].classList.toggle('current', v.indexOf(k) > -1);
+  }
+  pf.on('flip', function(e){ update(e.data); hideHint(); });
+  pf.on('changeOrientation', function(){ update(pf.getCurrentPageIndex()); });
+  pf.on('init', function(){ update(pf.getCurrentPageIndex()); });
+  setTimeout(function(){ update(pf.getCurrentPageIndex()); }, 50);
+
+  function go(n){ // n = 1-based printed page
+    var idx = Math.min(Math.max(n, 1), TOTAL) - 1;
+    prime(idx);
+    pf.flip(idx);
+  }
+  window.addEventListener('hashchange', function(){ var t = hashPage(); if (visible(pf.getCurrentPageIndex()).indexOf(t) < 0) go(t + 1); });
+
+  document.getElementById('prevSide').onclick = document.getElementById('prevBtn').onclick = function(){ pf.flipPrev(); };
+  document.getElementById('nextSide').onclick = document.getElementById('nextBtn').onclick = function(){ pf.flipNext(); };
+  document.addEventListener('keydown', function(e){
+    if (document.getElementById('zoom').classList.contains('open')) { if (e.key === 'Escape') closeZoom(); return; }
+    if (e.key === 'ArrowLeft') pf.flipPrev();
+    else if (e.key === 'ArrowRight') pf.flipNext();
+    else if (e.key === 'Escape') { closeMenu(); closeThumbs(); }
+  });
+
+  // Hint
+  var hint = document.getElementById('hint');
+  if ('ontouchstart' in window) hint.textContent = 'Swipe to turn the page';
+  function hideHint(){ hint.style.opacity = 0; }
+  setTimeout(hideHint, 5000);
+
+  // Contents menu
+  var menu = document.getElementById('menu'), menuBtn = document.getElementById('menuBtn');
+  var list = document.getElementById('menuList');
+  SECTIONS.forEach(function(s){
+    var b = document.createElement('button');
+    b.setAttribute('role', 'menuitem');
+    b.innerHTML = '<span>' + s[0] + '</span><span>' + s[1] + '</span>';
+    b.onclick = function(){ closeMenu(); go(s[1]); };
+    list.appendChild(b);
+  });
+  function closeMenu(){ menu.classList.remove('open'); menuBtn.setAttribute('aria-pressed','false'); }
+  menuBtn.onclick = function(e){ e.stopPropagation(); closeThumbs(); var o = menu.classList.toggle('open'); menuBtn.setAttribute('aria-pressed', o); };
+  document.addEventListener('click', function(e){ if (!menu.contains(e.target) && e.target !== menuBtn) closeMenu(); });
+
+  // Thumbnails
+  var thumbs = document.getElementById('thumbs'), thumbBtn = document.getElementById('thumbBtn'), grid = document.getElementById('thumbGrid'), thumbsBuilt = false;
+  function buildThumbs(){
+    if (thumbsBuilt) return; thumbsBuilt = true;
+    for (var i = 1; i <= TOTAL; i++) (function(n){
+      var b = document.createElement('button');
+      b.innerHTML = '<img loading="lazy" src="thumbs/p' + pad(n) + '.jpg" alt=""><div style="margin-top:6px">' + n + '</div>';
+      b.setAttribute('aria-label', 'Go to page ' + n);
+      b.onclick = function(){ closeThumbs(); go(n); };
+      grid.appendChild(b);
+    })(i);
+    update(pf.getCurrentPageIndex());
+  }
+  function closeThumbs(){ thumbs.classList.remove('open'); thumbs.setAttribute('aria-hidden','true'); thumbBtn.setAttribute('aria-pressed','false'); }
+  thumbBtn.onclick = function(){ closeMenu(); buildThumbs(); var o = thumbs.classList.toggle('open'); thumbs.setAttribute('aria-hidden', !o); thumbBtn.setAttribute('aria-pressed', o); };
+
+  // Zoom
+  var zoom = document.getElementById('zoom'), zoomImgs = document.getElementById('zoomImgs');
+  function closeZoom(){ zoom.classList.remove('open'); zoomImgs.innerHTML = ''; }
+  document.getElementById('zoomBtn').onclick = function(){
+    var v = visible(pf.getCurrentPageIndex());
+    zoomImgs.innerHTML = v.map(function(i){ return '<img src="pages/p' + pad(i+1) + '.jpg" alt="Catalogue page ' + (i+1) + '">'; }).join('');
+    zoom.classList.toggle('pair', v.length > 1);
+    zoom.classList.add('open'); zoom.scrollTop = 0;
+  };
+  document.getElementById('zoomClose').onclick = closeZoom;
+
+  // Full screen
+  document.getElementById('fsBtn').onclick = function(){
+    var el = document.documentElement;
+    if (!document.fullscreenElement) { (el.requestFullscreen || el.webkitRequestFullscreen || function(){}).call(el); }
+    else { (document.exitFullscreen || document.webkitExitFullscreen).call(document); }
+  };
+})();
+</script>
+</body>
+</html>
